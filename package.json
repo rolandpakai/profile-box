@@ -1,0 +1,23 @@
+{
+  "name": "Profile Box",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "start": "parcel index.html --open",
+    "build": "parcel build index.html"
+  },
+  "dependencies": {
+    "bootstrap": "5.0.0",
+    "@popperjs/core": "2.9.2",
+    "parcel-bundler": "^1.6.1",
+    "@fortawesome/fontawesome-free": "^5.15.3"
+  },
+  "devDependencies": {
+    "@babel/core": "7.2.0"
+  },
+  "resolutions": {
+    "@babel/preset-env": "7.13.8"
+  },
+  "keywords": []
+}

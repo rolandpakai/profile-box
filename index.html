@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Http Requests & JavaScript</title>
+    <link rel="stylesheet" href="src/app.css" />
+    <script src="src/index.js" defer></script>
+  </head>
+  <body>
+    <!-- App -->
+    <div id="App">
+      <div>
+        <button id="newProfileButton" class="btn btn-primary">
+          Add New Profile
+        </button>
+      </div>
+      <section id="control-center">
+        <div id="user-list-container" class="flex"></div>
+      </section>
+    </div>
+    <!-- UserModal -->
+    <div class="modal fade" id="userModal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content"></div>
+      </div>
+    </div>
+    <!-- ConfirmModal -->
+    <div id="confirmModal" class="modal" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Delete User</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p>Are you sure you want to delete the profile?</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" id="yesButton" class="btn btn-primary">
+              Yes
+            </button>
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              No
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
